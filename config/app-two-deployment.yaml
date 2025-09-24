@@ -17,4 +17,4 @@ spec:
           image: apptwo:0.0.1-SNAPSHOT
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8082
+            - containerPort: 8080
