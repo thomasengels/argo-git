@@ -4,4 +4,5 @@ kind: Kustomization
 resources:
   - app-one-deployment.yaml
   - app-two-deployment.yaml
-  - service.yaml
+  - app-one-service.yaml
+  - app-two-service.yaml
