@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app-one-container
-          image: appone:latest
+          image: appone:0.0.1-SNAPSHOT
           ports:
             - containerPort: 8081
