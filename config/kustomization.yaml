@@ -6,3 +6,5 @@ resources:
   - app-two-deployment.yaml
   - app-one-service.yaml
   - app-two-service.yaml
+  - psql-claim.yaml
+  - psql-pv.yaml

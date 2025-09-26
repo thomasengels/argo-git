@@ -19,7 +19,7 @@ spec:
           ports:
             - containerPort: 8080
         - name: postgres
-          image: postgres:latest
+          image: 'postgres:18'
           env:
             - name: POSTGRES_USER
               value: user
@@ -34,4 +34,5 @@ spec:
               name: postgres-storage
       volumes:
         - name: postgres-storage
-          emptyDir: {}
+          persistentVolumeClaim:
+            claimName: postgres-volume-claim
