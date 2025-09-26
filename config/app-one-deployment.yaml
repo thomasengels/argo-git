@@ -14,7 +14,21 @@ spec:
     spec:
       containers:
         - name: app-one-container
-          image: appone:custom
+          image: apponecustom:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
+        - name: postgres
+          image: postgres:latest
+          env:
+            - name: POSTGRES_USER
+              value: user
+            - name: POSTGRES_PASSWORD
+              value: password
+            - name: POSTGRES_DB
+              value: apponedb
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: postgres-storage

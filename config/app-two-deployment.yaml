@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app-two-container
-          image: apptwo:0.0.1-SNAPSHOT
+          image: apptwocustom:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
